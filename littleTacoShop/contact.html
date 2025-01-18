@@ -6,12 +6,17 @@
     <title>Document</title>
   </head>
   <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+}
     body {
       max-width: 500px;
       max-height: fit-content;
       margin: auto;
       border-right: 1px solid;
       border-left: 1px solid;
+      padding: 20px;
     }
     th,
     td {
@@ -20,15 +25,16 @@
     .img{
         height: 200px;
         width: 200px;
+        margin-top: 30px;
     }
   </style>
   <body>
     <h1>Contact Us</h1>
     <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">About LTS</a></li>
-      <li><a href="">Our Menu</a></li>
-      <li><a href="">Store Hours</a></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="home.html#about">About LTS</a></li>
+      <li><a href="home.html#ourMenu">Our Menu</a></li>
+      <li><a href="hours.html">Store Hours</a></li>
     </ul>
     <img class="img" src="tacos 3.png" alt="" />
     <br />
@@ -59,10 +65,10 @@
       <br />
       Kansas City, MO 55555-5555
       <br />
-      Phone: <a href=""><u>555-555-5555</u></a>
-      <a href=""><u>Back to Top</u></a>
+      Phone: <a href=""><u>555-555-5555</u></a> <br>
+      <a href="#top"><u>Back to Top</u></a>
     </p>
-    <hr />
+    <hr style="height: 2px;"/>
     <p>Copyright © The Little Taco Shop</p>
   </body>
 </html>
