@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    label{
+        display: block;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    th,td{
+        border: 1px solid gainsboro;
+        text-align: left;
+        width: 25em;
+    }
+    .grayRow{
+        background-color: rgba(128, 128, 128,0.3);
+    }
+
+</style>
+<body>
+    <h1>Welcome to Coding Intro</h1>
+    <h2>About Programming</h2>
+    <p>Programming is a way to “instruct the computer to perform various tasks.” Confusing? Let us understand the definition deeply. “Instruct the computer” basically means that you provide the computer a set of instructions that are written in a language that the computer can understand.</p>
+    <h2>About HTML</h2>
+    <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes, and other items.</p>
+    <h2>About CSS</h2>
+    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+    <label for="firstName">First name:</label>
+    <input type="text" name="firstName">
+    <label for="lastName">Last name:</label>
+    <input type="text" name="lastName">
+    <br>
+    <input type="submit" name="submitBtn">
+    <table>
+        <tr>
+            <th>List of Programming Languages</th>
+            <th>Full name of the Programming Languages</th>
+            <th>When it was founded</th>
+        </tr>
+        <tr class="grayRow">
+            <td>HTML</td>
+            <td>Hyper text markup Language</td>
+            <td>1989</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Cascading style sheets</td>
+            <td>1994</td>
+        </tr>
+        <tr class="grayRow">
+            <td>JS</td>
+            <td>JavaScript</td>
+            <td>1995</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Java</td>
+            <td>1991</td>
+        </tr>
+        <tr class="grayRow">
+            <td>PHP</td>
+            <td>Hypertext Preprocessor</td>
+            <td>1994</td>
+        </tr>
+    </table>
+</body>
+</html>
