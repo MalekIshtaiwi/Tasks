@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        height: fit-content;
+        padding: 0.3rem;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid gainsboro;
+    }
+    .circle{
+        height: 3rem;
+        width: 3rem;
+        background-color: red;
+        border-radius: 50%;
+        margin-right: auto;
+    }
+    .items{
+        display: flex;
+        gap: 2rem;
+    }
+</style>
+<body>
+    <h1 style="padding: 10px;">Navbars</h1>
+    <div class="container">
+        <div class="circle"></div>
+        <div class="items">
+            <a href="">Contact</a>
+            <a href="">Work</a>
+            <a href="">Portfolio</a>
+        </div>
+    </div>
+</body>
+</html>

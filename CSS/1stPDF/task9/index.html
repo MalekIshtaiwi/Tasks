@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    footer{
+        background-color: antiquewhite;
+        text-align: center;
+    }
+    .cyan{
+        color: cyan;
+    }
+    #idSelector{
+        background-color: cyan;
+        color: goldenrod;
+    }
+
+    .div1{
+        width: 100%;
+        background-color: rgba(0, 255, 100, 0.4);
+
+    }
+    .div1 p:nth-child(n){
+        color: blue;
+    }
+    .div1 p:nth-child(-n + 2){
+        color: red;
+    }
+
+    .div2{
+        width: 100%;
+        background-color: rgba(255, 0, 0, 0.3);
+        text-align: center;
+    }
+    .div2 h3:nth-child(odd){
+        color: black;
+    }
+    .div2 h3:nth-child(even){
+        color: red;
+    }
+</style>
+<body>
+    <h1 class="cyan"><u>I'm a class selector</u></h1>
+    <h2 id="idSelector">I'm the ID selector. Here I am a boos</h2>
+    <div class="div1">
+        <p>I'm red</p>
+        <p>I'm also red</p>
+        <p>what's going on? why am I blue?!</p>
+    </div>
+
+    <div class="div2">
+        <h3>odd</h3>
+        <h3>even</h3>
+        <h3>odd</h3>
+        <h3>even</h3>
+        <h3>odd</h3>
+        <h3>even</h3>
+    </div>
+
+    <footer>
+        © this is my github Account :_) <a href="https://github.com/MalekIshtaiwi">MalikIshtaiwi</a>
+    </footer>
+</body>
+</html>

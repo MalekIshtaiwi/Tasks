@@ -1,0 +1,20 @@
+body{
+    max-width: 100%;
+}
+h1{
+    color: yellow;
+}
+h3{
+    color: green;
+}
+a{
+    display: block;
+}
+.parent{
+    width: 70%;
+    margin: auto;
+}
+.header{
+    background-color: blue;
+    height: 4em;
+}
