@@ -11,12 +11,10 @@
         padding: 0;
         box-sizing: border-box;
     }
-    .container{
+    .header{
         display: flex;
-        height: fit-content;
-        padding: 0.3rem;
-        justify-content: center;
         align-items: center;
+        justify-content: space-between;
         border: 2px solid gainsboro;
     }
     .circle{
@@ -24,16 +22,24 @@
         width: 3rem;
         background-color: red;
         border-radius: 50%;
-        margin-right: auto;
+        
     }
+
     .items{
+        gap: 3rem;
+        margin-right: 2rem;
         display: flex;
-        gap: 2rem;
     }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
 </style>
 <body>
     <h1 style="padding: 10px;">Navbars</h1>
-    <div class="container">
+    <div class="header">
         <div class="circle"></div>
         <div class="items">
             <a href="">Contact</a>
