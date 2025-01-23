@@ -5,11 +5,6 @@
     --secondary-color:#434342;
     --text-color:#333;
 }
-.ctaBtn{
-    background-color: red;
-    height: auto;
-    width: 100px;
-}
 
 ul{
     list-style-type: none;
@@ -91,4 +86,25 @@ header img {
 }
 header ul{
     gap: 1rem;
+}
+main section {
+    display: flex;
+}
+main section div {
+    display: flex;
+    flex-direction: column;
+}
+
+main section img {
+    width: 35%;
+}
+
+.ctaBtn{
+    background-color: red;
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    border-radius: 1.4rem;
+    padding: 0.6rem;
+
 }
