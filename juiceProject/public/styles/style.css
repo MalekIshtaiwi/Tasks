@@ -85,7 +85,7 @@ header img {
     width: 100px;
 }
 header ul{
-    gap: 1rem;
+    gap: 2rem;
 }
 main section {
     display: flex;
