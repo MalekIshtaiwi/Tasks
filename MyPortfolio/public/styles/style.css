@@ -156,8 +156,16 @@ line-height: 1.8;
 }
 /*projects styling starts here*/
 .projects{
-height: 300vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.project{
+    height: 100vh;
+
+}
+
 /*contact styling starts here*/
 .contact{
 display: flex;
@@ -209,4 +217,21 @@ line-height: 1.8;
     align-self: end;
     text-decoration: underline #ff4d5a;
     background-color: transparent;
+}
+/*Footer Styling Starts Here*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    background-color: #282828;
+}
+footer ul img {
+    height: 2rem;
+}
+footer ul {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
