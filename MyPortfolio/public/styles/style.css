@@ -135,12 +135,19 @@ nav ul li a:hover{
     font-size: 5rem;
     font-weight: 600;
 }
+.pic{
+    border-radius: 5rem;
+    height: 10rem;
+    margin-bottom: 3rem;
+    
+}
 .about_paragraph{
 width: 50%;
 font-size: 1.4rem;
 line-height: 1.8;
 }
 .about_cards{
+    margin-top: 5rem;
     display: flex;
 
 }
