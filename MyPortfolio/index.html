@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header class="hero">
+    <header class="hero" id="home">
         <div class="hero_headline">Hello, I'm <span>Malek</span>.</div>
         <div class="hero_headline">I'm a full stack web developer.</div>
         <a href="">View my work <span class="material-symbols-outlined">
@@ -18,13 +18,13 @@
     </header>
     <nav>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <section class="about">
+    <section class="about" id="about">
         <h2 class="about_header">About</h2>
         <svg xmlns="http://www.w3.org/2000/svg" height="15rem" viewBox="0 -960 960 960" width="15rem" fill="#5f6368"><path d="M480-481q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160-160v-94q0-38 19-65t49-41q67-30 128.5-45T480-420q62 0 123 15.5t127.92 44.69q31.3 14.13 50.19 40.97Q800-292 800-254v94H160Zm60-60h520v-34q0-16-9.5-30.5T707-306q-64-31-117-42.5T480-360q-57 0-111 11.5T252-306q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570-631q0-39-25.5-64.5T480-721q-39 0-64.5 25.5T390-631q0 39 25.5 64.5T480-541Zm0-90Zm0 411Z"/></svg>
         <div class="about_paragraph">
@@ -79,13 +79,89 @@
             </div>
         </div>
     </section>
-    <section class="projects">
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
+    <section class="projects" id="projects">
+        <h2 class="projects_heading">Projects</h2>
+        
+        <div class="project">
+            <div class="project_preview">
+                <video autoplay loop  muted play playsinline>
+                    <source src="public/videos/rts.mp4">
+                </video>
+            </div>
+
+            <div class="project_data">
+                <h3>
+                    Resources Simulation
+                    <br>
+                    3d game
+                </h3>
+                <p>A mini rts demo built using Unity and C#.</p>
+                <a class="git_repo_btn" href="https://github.com/MalekIshtaiwi/Jr-Programmer-Project" target="_blank">
+                    Git Repo
+                </a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project_preview">
+                <video autoplay loop  muted play playsinline>
+                    <source src="public/videos/nf.mp4">
+                </video>
+                <div class="hidden_preview">
+                    <a href="https://play.unity.com/en/games/8b7001e4-8ae3-460c-9271-fe7c82df43e5/swipeanddestroy" class="play_game_btn" target="_blank">Play The Game</a>
+                </div>
+            </div>
+            <div class="project_data">
+                <h3>
+                    Slash&Squash
+                    <br>
+                    2d game
+                </h3>
+                <p>A 2d game with infinite gameplay time built using unity.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project_preview">
+                <video autoplay loop  muted play playsinline>
+                    <source src="public/videos/ft.mkv">
+                </video>
+            </div>
+            <div class="project_data">
+                <h3>
+                    Family Tracker
+                    <br>
+                    Web Application
+                </h3>
+                <p>Track the visited countries for each of your family members</p>
+                <a class="git_repo_btn" href="https://github.com/MalekIshtaiwi/Family-Tracker" target="_blank">
+                    Git Repo
+                </a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project_preview">
+                <video autoplay loop  muted play playsinline>
+                    <source src="public/videos/simon.mkv">
+                </video>
+                <div class="hidden_preview">
+                    <a href="https://malekishtaiwi.github.io/Simon-Game/" class="play_game_btn" target="_blank">Play The Game</a>
+                </div>
+            </div>
+            <div class="project_data">
+                <h3>
+                    Simon Game
+                    <br>
+                    Web Game
+                </h3>
+                <p>a 2d simon game made using html, css, js and jquery</p>
+                <a class="git_repo_btn" href="https://github.com/MalekIshtaiwi/Simon-Game" target="_blank">
+                    Git Repo
+                </a>
+            </div>
+        </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2 class="contact_header">Contact</h2>
         <div class="contact_paragraph">
             Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.
@@ -94,13 +170,13 @@
             <input type="text" name="name" placeholder="Name">
             <input type="text" type = "email" name="email" placeholder="Email">
             <textarea name="message" placeholder="Message"></textarea>
-            <button class="form_button">SUBMIT</button>
+            <button type="button" class="form_button">Submit</button>
         </form>
     </section>
     <footer>
         <ul>
-            <img src="public/images/GITHUB.svg" alt="">
-            <img src="public/images/LINKEDIN.svg" alt="">
+            <a href="https://github.com/MalekIshtaiwi"><img src="public/images/GITHUB.svg" alt=""></a>
+            <a href=""><img src="public/images/LINKEDIN.svg" alt=""></a>
         </ul>
         <small>MALEK ISHTAIWI ©2025</small>
     </footer>
