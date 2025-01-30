@@ -326,15 +326,15 @@ function Remainder(x,y){
 //         return false;
 // }
 /////////////////////////////////////
-function isLeapYear(year){
-    if (year % 4 == 0 && year % 100 != 0)
-        return true;
-    else if (year % 4 ==0 && year % 100 ==0 && year % 400 == 0)
-        return true;
-    else
-        return false;
-}
-console.log(isLeapYear(2380));
+// function isLeapYear(year){
+//     if (year % 4 == 0 && year % 100 != 0)
+//         return true;
+//     else if (year % 4 ==0 && year % 100 ==0 && year % 400 == 0)
+//         return true;
+//     else
+//         return false;
+// }
+// console.log(isLeapYear(2380));
 
 
 /// divisible by 4 but not by 100 = leap year //divisible by 4 and 100 = not leap year// divisible by 4 and 100 and 400 = leap year
@@ -404,17 +404,9 @@ console.log(isLeapYear(2380));
 //     return phrase;
 // }
 // console.log(fizzBuzz(9));
-
-// function doSomething(n) {
-//     if(n === 0) {
-//       console.log("TASK COMPLETED!")
-//       return
-//     }
-//     console.log("I'm doing something.")
-//     doSomething(n - 1)
-//   }
-//   doSomething(3)
-
+////////////////////////////////////////////
+//The code below doesn't work for some reason, the one below however does
+///////////////////////////////////////////////////
 // function recursiveFizzBuzz(limit,n){
 
 //     if (n > limit){
@@ -435,15 +427,12 @@ console.log(isLeapYear(2380));
 // }
 
 // console.log(recursiveFizzBuzz(100,1));
+/////////////////////////////////////////////////////////
 
 // function fizzBuzz(n, limit) {
-//     // Base case: stop when n exceeds the limit
 //     if (n > limit){
 //         return;
 //     }
-
-
-//     // Print Fizz, Buzz, or FizzBuzz
 //     if (n % 3 === 0 && n % 5 === 0) {
 //       console.log("FizzBuzz");
 //     } else if (n % 3 === 0) {
@@ -453,11 +442,96 @@ console.log(isLeapYear(2380));
 //     } else {
 //       console.log(n);
 //     }
-
-//     // Recursive call
 //     fizzBuzz(n + 1, limit);
 //   }
 
-//   // Start the FizzBuzz series
 //   fizzBuzz(1 , 100);
 
+///////////////////////////////////////////
+// function bankNotes(amount,notes){
+//     var notesReturned = [];
+//     for (let i = 0; i < notes.length; i++){
+//         if(amount >= notes[i]){
+//             notesReturned.push(notes[i]);
+//             amount -= notes[i];
+//             i--;
+//         }
+//     }
+//     console.log(notesReturned);
+// }
+// bankNotes(277,[100,50,20,10,5,1]);
+///////////////////////////////////////////
+// function countLetter(phrase,letter){
+//     var count = 0;
+//     for (let i = 0; i < phrase.length; i++) {
+//         if (phrase[i] == letter)
+//             count++;
+//     }
+//     return count;
+// }
+// console.log(countLetter("Coding Academy by Orange","r"));
+///////////////////////////////////////////
+// for (let i = 0; i <= 20; i++) {
+//    console.log(i);
+// }
+///////////////////////////////////////////
+// for (let i = 3; i <= 29; i++) {
+//     if (i % 2 == 0)
+//         console.log(i);
+// }
+///////////////////////////////////////////
+// for (let i = 12; i >= -14; i-=2) {
+//     if (Math.abs(i) % 2 == 0)
+//         console.log(i);
+// }
+///////////////////////////////////////////
+// for (let i = 50; i >= 20; i--) {
+//     if (i % 3 == 0)
+//         console.log(i);
+// }
+///////////////////////////////////////////
+// var phrase = "CodingAcademy";
+// var array = [7, 500, 'KH404', 'black', 36];
+// //print each element of the array
+// for (let i = 0; i < array.length; i++) {
+//     console.log(array[i]);
+// }
+// reverse a string
+// var splitPhrase = phrase.split("");
+// var reversed = "";
+// for (let i = splitPhrase.length - 1; i >= 0; i--) {
+//     reversed += splitPhrase[i];
+// }
+// console.log(reversed);
+///////////////////////////////////////////
+// var array = [7, 23, 18, 9, -13, 38, -10, 12, 0, 124];
+// var evenArray = [];
+// var oddArray = [];
+
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] % 2 == 0)
+//         evenArray.push(array[i]);
+//     else
+//         oddArray.push(array[i]);
+// }
+///////////////////////////////////////////
+var protien = ['chicken', 'pork', 'tofu', 'beef', 'fish', 'beans'];
+var grain = ['rice', 'pasta', 'corn', 'potato', 'quinoa', 'crackers'];
+var vegetable = ['peas', 'green beans', 'kale', 'edamame', 'broccoli', 'asparagus'];
+var beverage = ['juice', 'milk', 'water', 'soy milk', 'soda', 'tea'];
+var dessert = ['apple', 'banana', 'more kale', 'ice cream', 'chocolate', 'kiwi'];
+
+function meals(number) {
+    var meals = [];
+    for (let i = 0; i < number; i++) {
+        var meal = [];
+        meal.push(protien[Math.floor(Math.random() * protien.length)]);
+        meal.push(grain[Math.floor(Math.random() * grain.length)]);
+        meal.push(vegetable[Math.floor(Math.random() * vegetable.length)]);
+        meal.push(beverage[Math.floor(Math.random() * beverage.length)]);
+        meal.push(dessert[Math.floor(Math.random() * dessert.length)]);
+        meals.push(meal);
+    }
+    console.log(meals);
+}
+meals(5);
