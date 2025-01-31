@@ -530,7 +530,16 @@ function meals(number) {
         meal.push(vegetable[Math.floor(Math.random() * vegetable.length)]);
         meal.push(beverage[Math.floor(Math.random() * beverage.length)]);
         meal.push(dessert[Math.floor(Math.random() * dessert.length)]);
-        meals.push(meal);
+        //check if the random meal exists before adding it to meals
+        if (!meals.some(existingMeal => 
+            existingMeal.protein === meal.protein &&
+            existingMeal.grain === meal.grain &&
+            existingMeal.vegetable === meal.vegetable &&
+            existingMeal.beverage === meal.beverage &&
+            existingMeal.dessert === meal.dessert)) {
+            meals.push(meal);
+          }
+
     }
     console.log(meals);
 }

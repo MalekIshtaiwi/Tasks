@@ -71,11 +71,24 @@ while(true){
 }
 
 // prime
-// let number = 20;
+function isPrime (num){ //20
+    for(let i = 2 ; i <= num; i++){
+        if(i === 2){
+            console.log(i);
+        }
+        for(let j=2;j<i;j++){
+            if(i%j === 0){
+                break;
+            }
+            else {
+                console.log(i);
+                break;
+            }
+        }
 
-// for (let i = 0; i <= number; i++) {
-    
-// }
+    }
+}
+isPrime(20);
 //
 let mul = 5;
 for (let i = 1; i <= 10; i++) {
