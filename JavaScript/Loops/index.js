@@ -71,7 +71,7 @@ while(true){
 }
 
 // prime
-function isPrime (num){ //20
+function printPrime (num){ //20
     for(let i = 2 ; i <= num; i++){
         if(i === 2){
             console.log(i);
@@ -88,7 +88,7 @@ function isPrime (num){ //20
 
     }
 }
-isPrime(20);
+printPrime(20);
 //
 let mul = 5;
 for (let i = 1; i <= 10; i++) {
