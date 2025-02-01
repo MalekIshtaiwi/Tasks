@@ -523,7 +523,7 @@ var dessert = ['apple', 'banana', 'more kale', 'ice cream', 'chocolate', 'kiwi']
 
 function meals(number) {
     var meals = [];
-    for (let i = 0; i < number; i++) {
+    while (meals.length < number) {
         var meal = [];
         meal.push(protien[Math.floor(Math.random() * protien.length)]);
         meal.push(grain[Math.floor(Math.random() * grain.length)]);
